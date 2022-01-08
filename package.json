@@ -1,0 +1,13 @@
+{
+  "name": "prismic-eleventy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts":{
+    "dev": "npx @11ty/eleventy --serve"
+    },
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "sass": "^1.47.0"
+  }
+}
