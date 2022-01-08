@@ -1,5 +1,3 @@
-const sass = require('sass');
-
 const {
 	pluginPrismic,
 	definePrismicPluginOptions,
@@ -14,29 +12,11 @@ const prismicPluginOptions = definePrismicPluginOptions({
 
 
 module.exports =  (eleventyConfig) => {
-  
-  // Compile Sass
-  eleventyConfig.addExtension('scss', {
-    outputFileExtension: 'css',
-    compile: function (contents, inputPath) {
-      let includesPaths = [this.config.dir.includes];
-      return (data) => {
-        let ret = sass.compileAsync(inputPath, {
-          includesPaths,
-          data: contents
-        });
-        return ret.css.toString("utf8");
-      }
-    }
-  })
-
-  eleventyConfig.addTemplateFormats('scss');
-  
   // Conects the prismic-plugin to eleventy
   eleventyConfig.addPlugin(pluginPrismic, prismicPluginOptions);
 
   return {
-    // defining templating language
+    // defining templating languages
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
