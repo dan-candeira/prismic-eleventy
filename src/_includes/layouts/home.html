@@ -1,0 +1,14 @@
+---
+pageTitle: My blog
+---
+
+{% extends "layouts/base.html" %} 
+
+{% block content %}
+  <h1> {% prismic_asText  prismic.home.data.title %} </h1>
+
+  <div>
+    {% prismic_image prismic.home.data.hero %}
+  </div>
+
+{% endblock %}
