@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@11ty/dependency-tree/-/dependency-tree-2.0.0.tgz#16143ce261c5dd00b3822374125745aaddd4d593"
   integrity sha512-tYrGX3Tvccufy2jaYDkYpjBmVP1LeQq6b/d0r4GYThTXL4f3ZR7yMAl/0r8h9xvnsP+gkO53wfnV7s8cXcCtEg==
 
-"@11ty/eleventy@^1.0.0-canary.50":
-  version "1.0.0-canary.50"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-1.0.0-canary.50.tgz#cfef411f6582704b0d98e75ab76ae901efe633dd"
-  integrity sha512-NfexgQE+u/bL/q7vIL6KoRjgjQ/fBSyoZRuvsSrUFzkgXd5WhtZ3Zy5Hx2YLacRzDbwVN0jJVae49P7+m0aofA==
+"@11ty/eleventy@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-1.0.0.tgz#febe42fabc00547aaf4c43ed78b412d8afa04a04"
+  integrity sha512-UMZghkMFwovu3Vh6DzjJ9GbcBnlE3nydGmLAti2AB1d6etQE+jXgfuHNxOyV1em33ywsBgGUCtLmLHaaTSU+Nw==
   dependencies:
     "@11ty/dependency-tree" "^2.0.0"
     "@iarna/toml" "^2.2.5"
@@ -20,8 +20,8 @@
     debug "^4.3.3"
     dependency-graph "^0.11.0"
     ejs "^3.1.6"
-    fast-glob "^3.2.7"
-    graceful-fs "^4.2.8"
+    fast-glob "^3.2.9"
+    graceful-fs "^4.2.9"
     gray-matter "^4.0.3"
     hamljs "^0.6.2"
     handlebars "^4.7.7"
@@ -30,7 +30,7 @@
     liquidjs "^9.32.0"
     lodash "^4.17.21"
     luxon "^2.3.0"
-    markdown-it "^12.3.0"
+    markdown-it "^12.3.2"
     minimist "^1.2.5"
     moo "^0.5.1"
     multimatch "^5.0.0"
@@ -68,6 +68,13 @@
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"
   integrity sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
 
+"@netlify/functions@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@netlify/functions/-/functions-0.10.0.tgz#3856b609df1c1d1c7c21773650d1e5b4f81cfaf2"
+  integrity sha512-NNFADTPnokuoMY1OUhaXlE/Jrzk5lHOl1uB4L/8pw1UJ/CaectZJACMExijbJnqaKIhOQG0WmbBQUh1lgnK/Qg==
+  dependencies:
+    is-promise "^4.0.0"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -89,15 +96,15 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@prismicio/client@^6.0.0-beta.5":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@prismicio/client/-/client-6.0.0.tgz#1345ec7011a586b71694e1a400c24ac3502dd09b"
-  integrity sha512-xI3wj/3kq//kyVRom04dmcQHICKSxpndwoBBsOXhcSbYiaXvXO7nFYYLsKQh0LL8uXpTt3rJsKVyUgl1ClAUCg==
+"@prismicio/client@^6.0.0":
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/@prismicio/client/-/client-6.3.0.tgz#a1f3a861d1950e8a7a59f01ad207d9bbc1744e59"
+  integrity sha512-FeKbmuXNCNU1tw+yvc87PfYF8wSY0rfe0Ou2VCo0PFdMlHzRMu8CXkITNswv3cDakeu8xU0Z7IOfTiF4WE5nLQ==
   dependencies:
-    "@prismicio/helpers" "^2.0.0"
-    "@prismicio/types" "^0.1.21"
+    "@prismicio/helpers" "^2.1.1"
+    "@prismicio/types" "^0.1.24"
 
-"@prismicio/helpers@^2.0.0", "@prismicio/helpers@^2.0.0-beta.8":
+"@prismicio/helpers@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@prismicio/helpers/-/helpers-2.0.0.tgz#ac975a7930d798835addd44cccb4598e26f53a50"
   integrity sha512-8xnK2pj+us935wAvJvPdk4o6Zhn/z99aUWwaGYJBbNqQy8x0pahgXY1L3l6s6+9xcEdJy6kKL8IfvFS6U0tpXg==
@@ -106,6 +113,16 @@
     "@prismicio/types" "^0.1.20"
     escape-html "^1.0.3"
 
+"@prismicio/helpers@^2.1.1":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@prismicio/helpers/-/helpers-2.2.0.tgz#75fedf38f8c8f82f88421dca3de489f7b6c9d2ee"
+  integrity sha512-qgszdfBrPqn4NdmBiyNK+USfUWuI21HCCOMJMoq2R6jp4YDbxcXD7RjixNPK9mjZRtraHnrHzFO/ABK1gLgQIA==
+  dependencies:
+    "@prismicio/richtext" "^2.0.1"
+    "@prismicio/types" "^0.1.24"
+    escape-html "^1.0.3"
+    imgix-url-builder "^0.0.2"
+
 "@prismicio/richtext@^2.0.0-beta.3":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@prismicio/richtext/-/richtext-2.0.0.tgz#681e1ea847e1973086d45e285b12f649e1e2d5a3"
@@ -113,10 +130,22 @@
   dependencies:
     "@prismicio/types" "^0.1.19"
 
+"@prismicio/richtext@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@prismicio/richtext/-/richtext-2.0.1.tgz#6342f071601d88e99ca03faab382202087fd55a5"
+  integrity sha512-sM+eusvE4PsKnwefDRd0ai3Ny59XJ54dn6xfwq0Fyqj0LAcuyB2gRjSufbIqYOZ1r4JKMQArDKrypNEcrbBFkA==
+  dependencies:
+    "@prismicio/types" "^0.1.22"
+
 "@prismicio/types@^0.1.19", "@prismicio/types@^0.1.20", "@prismicio/types@^0.1.21":
   version "0.1.21"
   resolved "https://registry.yarnpkg.com/@prismicio/types/-/types-0.1.21.tgz#2d5f8a3f85435859ff290be96235b450b164a4e7"
   integrity sha512-TMO4zpHlBFdvULDU5KQxeHOkI72lCkEKT3YwKhqiaiQWRVp7s3w27mXHjOWVBOlH/2qrzck219O84zBE6HzaMg==
+
+"@prismicio/types@^0.1.22", "@prismicio/types@^0.1.24":
+  version "0.1.27"
+  resolved "https://registry.yarnpkg.com/@prismicio/types/-/types-0.1.27.tgz#7f2fd91f1781a6da62630438b828230df72ae2b3"
+  integrity sha512-+Oc7EFcp6RGVMvFKQl9y9D4HtBhHeOtE0asfYhedCflQDf3OOzjE8POIu1bXTkk8i1kEWM3oYvz6yLN4yAyGWQ==
 
 "@sindresorhus/slugify@^1.1.2":
   version "1.1.2"
@@ -1181,13 +1210,14 @@ ejs@^3.1.6:
   dependencies:
     jake "^10.6.1"
 
-eleventy-plugin-prismic@^0.1.5:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/eleventy-plugin-prismic/-/eleventy-plugin-prismic-0.1.5.tgz#6f9416931b3f884feede0d180454277c00af25f8"
-  integrity sha512-ZhpBDVH/INlL/ntwZJwv+YqPM6aZ41KBXoDNTIXN9EYjP8rUWv6otadSIuVrpd6C3p3GFXJxx/zgVrZ78Z2swg==
+eleventy-plugin-prismic@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-prismic/-/eleventy-plugin-prismic-0.2.1.tgz#8725abd205e0608c97302df278fcf0b72ca00f85"
+  integrity sha512-w30lcrQ2Jm/eV4CboKcG/01nK58do4+0qA8usZDOtID2cVPvNqiPsiieyIDAPhLfrxkNx2bWuZqea3HT8MVOfA==
   dependencies:
-    "@prismicio/client" "^6.0.0-beta.5"
-    "@prismicio/helpers" "^2.0.0-beta.8"
+    "@netlify/functions" "^0.10.0"
+    "@prismicio/client" "^6.0.0"
+    "@prismicio/helpers" "^2.0.0"
     "@prismicio/types" "^0.1.21"
     dayjs "^1.10.7"
     debug "^4.3.3"
@@ -1416,7 +1446,7 @@ fancy-log@^1.3.2:
     parse-node-version "^1.0.0"
     time-stamp "^1.0.0"
 
-fast-glob@^3.2.7:
+fast-glob@^3.2.9:
   version "3.2.9"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.9.tgz#8f55f664b68a236bd29fa165817fc44f2b11faba"
   integrity sha512-MBwILhhD92sziIrMQwpqcuGERF+BH99ei2a3XsGJuqEKcSycAL+w0HWokFenZXona+kjFr82Lf71eTxNRC06XQ==
@@ -1736,7 +1766,7 @@ gorko@^0.9.1:
   dependencies:
     sass "^1.26.5"
 
-graceful-fs@^4.0.0, graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.4, graceful-fs@^4.1.6, graceful-fs@^4.2.8:
+graceful-fs@^4.0.0, graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.4, graceful-fs@^4.1.6, graceful-fs@^4.2.9:
   version "4.2.9"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.9.tgz#041b05df45755e587a24942279b9d113146e1c96"
   integrity sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==
@@ -1958,6 +1988,11 @@ iconv-lite@0.4.24:
   integrity sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
+
+imgix-url-builder@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/imgix-url-builder/-/imgix-url-builder-0.0.2.tgz#49a583cacdb3ac38a0a5c098271bec3b3cdee55b"
+  integrity sha512-PHT9aXvD+I6x5UAdvsAKNALvxHI1AWGGpxLUQDQAXzUt54ScFHxxODJ/4/XWDM55cqvRCvT3MMxbOWjgWhLe9Q==
 
 immutable@^3:
   version "3.8.2"
@@ -2207,6 +2242,11 @@ is-promise@^2.0.0:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/is-promise/-/is-promise-2.2.2.tgz#39ab959ccbf9a774cf079f7b40c7a26f763135f1"
   integrity sha512-+lP4/6lKUBfQjZ2pdxThZvLUAafmZb8OAxFb8XXtiQmS35INgr85hdOGoEs124ez1FCnZJt6jau/T+alh58QFQ==
+
+is-promise@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/is-promise/-/is-promise-4.0.0.tgz#42ff9f84206c1991d26debf520dd5c01042dd2f3"
+  integrity sha512-hvpoI6korhJMnej285dSg6nu1+e6uxs7zG3BYAm5byqDsgJNWwxzM6z6iZiAgQR4TJ30JmBTOwqZUw3WlyH3AQ==
 
 is-regex@^1.0.3:
   version "1.1.4"
@@ -2521,7 +2561,7 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-markdown-it@^12.3.0:
+markdown-it@^12.3.2:
   version "12.3.2"
   resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-12.3.2.tgz#bf92ac92283fe983fe4de8ff8abfb5ad72cd0c90"
   integrity sha512-TchMembfxfNVpHkbtriWltGWc+m3xszaRD0CZup7GFFhzIgQqxIfn3eGj1yZpfuflzPvfkt611B2Q/Bsk1YnGg==
